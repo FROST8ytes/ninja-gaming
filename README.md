@@ -1,22 +1,14 @@
-# create-svelte
+# Ninja Gaming
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+Powered by Svelte & SvelteKit.
 
-## Creating a project
+## About
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+This project is meant to be used as part of learning Svelte and SvelteKit. The codes in here may be adapted from other projects to avoid implementing features not related to the topics being learned.
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Once you've installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
 npm run dev
