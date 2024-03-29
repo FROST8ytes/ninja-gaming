@@ -11,6 +11,9 @@
 		Quam nam ut fugit consectetur incidunt sint ipsum culpa corporis! Necessitatibus amet vitae
 		accusantium.
 	</p>
+
+	<a href="/guides">View Guides</a>
+	<a href="/about">About</a>
 </div>
 
 <style>
