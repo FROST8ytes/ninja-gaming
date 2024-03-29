@@ -1,7 +1,13 @@
+<script>
+	export let data;
+	$: guides = data.props?.guides;
+</script>
+
 <div class="guides">
 	<ul>
-		<li><a href="/">guide 1</a></li>
-		<li><a href="/">guide 2</a></li>
+		{#each guides as guide}
+			<li><a href="/">{guide.title}</a></li>
+		{/each}
 	</ul>
 </div>
 
