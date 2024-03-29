@@ -1,3 +1,5 @@
+import { redirect } from '@sveltejs/kit';
+
 /** @type {import('./$types').PageLoad} */
 export async function load({ fetch, params }) {
 	const id = params.id;
@@ -12,8 +14,5 @@ export async function load({ fetch, params }) {
 		};
 	}
 
-	return {
-		status: response.status,
-		error: new Error('Could not fetch the guide')
-	};
+	throw redirect(301, '/guides');
 }
