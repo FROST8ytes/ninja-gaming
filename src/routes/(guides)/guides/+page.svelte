@@ -1,4 +1,5 @@
 <script>
+	/** @type {import('./$types').PageData} */
 	export let data;
 	$: guides = data.props?.guides;
 </script>
@@ -6,7 +7,7 @@
 <div class="guides">
 	<ul>
 		{#each guides as guide}
-			<li><a href="/">{guide.title}</a></li>
+			<li><a href={`/guides/${guide.id}`}>{guide.title}</a></li>
 		{/each}
 	</ul>
 </div>
