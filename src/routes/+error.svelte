@@ -3,10 +3,13 @@
 	import { browser } from '$app/environment';
 	import Title from '$lib/Title.svelte';
 	import '$styles/global.css';
+	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
 
 	function nav_back() {
 		if (browser) window.history.back();
 	}
+
+	injectSpeedInsights();
 </script>
 
 <header>
@@ -54,12 +57,5 @@
 		border: 1px dotted rgba(255, 255, 255, 0.2);
 		background: none;
 		cursor: pointer;
-	}
-
-	a {
-		display: inline-block;
-		margin-top: 10px;
-		padding: 10px;
-		border: 1px dotted rgba(255, 255, 255, 0.2);
 	}
 </style>

@@ -1,6 +1,9 @@
 <script>
 	import Title from '$lib/Title.svelte';
 	import '$styles/global.css';
+	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
+
+	injectSpeedInsights();
 </script>
 
 <header>
